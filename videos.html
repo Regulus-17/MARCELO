@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canciones - Mi Niña Bonita 💖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #d81b60;
+            padding: 15px 0;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .menu-container {
+            padding: 50px 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .card h2 {
+            color: #d81b60;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Botón para volver */
+        .back-button {
+            background-color: #d81b60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background-color: #c2185b;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-style: italic;
+            color: #d81b60;
+        }
+    </style>
+</head>
+<body class="menu-body">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="menu.html">Inicio</a></li>
+                <li><a href="album.html">Álbum de fotos</a></li>
+                <li><a href="videos.html">Nuestros Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="menu-container">
+        <div class="card">
+            <h2>Me enamoré de ti ❤️ por tu persona 🌸, no por tu físico 💫, no por lo que tienes 💎, ni por tu pasado 🌙...</h2>
+            <!-- Video local -->
+            <video controls>
+                <source src="videos/mi_principito.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+
+        <div class="card">
+            <h2>Eres mi ☀️ solecito de cada amanecer 🌅 y tus mensajes son mi ☕ café de mi mañana 💛</h2>
+            <!-- Segundo video local -->
+            <video controls>
+                <source src="videos/justos_siempre.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+
+        <button class="back-button" onclick="window.location.href='menu.html'">⬅️ Volver al inicio</button>
+
+        <footer>
+            Hecho con 💕 por Jazmín Espinoza
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Aniversario!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #d81b60;
+            padding: 15px 0;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .menu-container {
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        .card h2 {
+            color: #d81b60;
+        }
+        .card p {
+            line-height: 1.6;
+        }
+        .card .firma {
+            margin-top: 20px;
+            font-style: italic;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* 🌹 Botón de volver */
+        .back-button {
+            margin-top: 30px;
+            display: inline-block;
+            background-color: #d81b60;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background-color: #c2185b;
+        }
+        /* 🎬 Estilos del video */
+        .video-container {
+            margin: 25px 0;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="menu-body">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="menu.html">Inicio</a></li>
+                <li><a href="album.html">Álbum de fotos</a></li>
+                <li><a href="videos.html">Nuestros Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="menu-container">
+        <div class="card">
+            <h2>✨💌 Carta para mi amor, Marcito 💖 💌✨</h2>
+
+            <!-- 🎬 Video romántico -->
+            <div class="video-container">
+                <video id="videoAmor" src="videos/amor_de_mi_vida.mp4" autoplay loop ></video>
+            </div>
+
+            <p>
+                Para ti, chefcito de mi vida 😘, hoy 29 celebramos un mes más de momentos de risas, abrazos, y muchos más que se quedan grabados en mi corazón y mente 💖.  
+                Agradezco infinitamente a Dios tenerte en mi vida, porque desde que llegaste, todo es más bonito 🌈, más cálido ☀ y más real ✨.
+            </p>
+            <p>
+                Contigo he aprendido que el amor no se mide en días, sino en los instantes en que uno se siente verdaderamente feliz 💞.  
+                Y yo, me siento así cada vez que te veo, que te escucho o simplemente pienso en ti 😍... me derrito ante ti 🤭💋.
+            </p>
+            <p>
+                Gracias por ser como eres 💐: por tu ternura, por tu paciencia, por cómo preparas el chaufita 🍚,  
+                por tus locuras que me hacen reír 😂 y por esos detalles que me hacen suspirar 💕.  
+                Eres mi apoyo, mi alegría, mi refugio y mi razón para seguir adelante día a día 🌹.
+            </p>
+            <p>
+                Te amo con todo mi corazón 💘, y deseo que sigamos sumando meses, años y una vida entera juntos 🌍🤍.
+            </p>
+
+            <p class="firma">- Con todo mi amor,  
+                Tu niñita chiquita 💌
+            </p>
+
+            <a href="index.html" class="back-button">Volver al inicio</a>
+        </div>
+    </main>
+
+    <script>
+        // Reproducir el video con sonido cuando el usuario interactúe (por políticas de navegador)
+        document.addEventListener('click', () => {
+            const video = document.getElementById('videoAmor');
+            video.muted = false;
+            video.play().catch(() => {});
+        });
+    </script>
+</body>
+</html>
